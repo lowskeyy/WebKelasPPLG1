@@ -20,23 +20,27 @@ li {
     list-style-type: none;
 }
 
-.picture, .picture2 {
+.picture {
     display: flex;
-    justify-content: space-evenly;
-    padding-top: 2rem;
+    padding: 2rem;
+}
+
+.picture2 {
+    display: flex;
+    padding-right: 2rem;
 }
 
 .ini4 {
     position: relative;
-    left: 27px;
+    left: 31px;
 }
 
-.ini5 {
-    position: relative;
-    left: -54px;
+/* overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
-.ini6 {
-    position: relative;
-    left: -27px;
-}

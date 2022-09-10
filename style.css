@@ -11,3 +11,7 @@ svg {
     position: relative;
     top: px;
 }
+
+.lead {
+    font-size: 16px;
+}

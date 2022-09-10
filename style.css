@@ -73,6 +73,9 @@ li {
     background: rgba(0, 0, 0, 0);
     z-index: 9990;
     transition: .5s;
+    text-align: center;
+    padding-top: 50%;
+
 }
 
 .overlay:target {
@@ -84,7 +87,54 @@ li {
 }
 
 .overlay img {
+    max-height: 100%;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.6);
+}
 
+.overlay:target img {
+    animation: zoomOut .5s;
+}
+
+.overlay .cls-img {
+    position: absolute;
+    top: 140px;
+    left: 240px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #fff;
+
+}
+
+.overlay:target .cls-img {
+    animation: closeBtn .7s;
+    transition: .7s;
+}
+/* Keyframe overlay */
+
+@keyframes zoomOut {
+    0% {
+        scale: 0;
+        opacity: 0;
+    }
+    50% {
+        transform: rotate(90deg);
+    }
+    100% {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+@keyframes closeBtn {
+    0% {
+        opacity: 0;
+        margin-top: -15px;
+    }
+
+    100% {
+        opacity: 1;
+        margin-top: 0;
+    }
 }
 
 

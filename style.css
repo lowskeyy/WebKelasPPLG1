@@ -15,3 +15,28 @@ svg {
 .lead {
     font-size: 16px;
 }
+
+li {
+    list-style-type: none;
+}
+
+.picture, .picture2 {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2rem;
+}
+
+.ini4 {
+    position: relative;
+    left: 27px;
+}
+
+.ini5 {
+    position: relative;
+    left: -54px;
+}
+
+.ini6 {
+    position: relative;
+    left: -27px;
+}

@@ -1,0 +1,13 @@
+.jumbotron {
+    padding: 2rem 1rem;
+    background-color: #fae467;
+}
+
+.display-4 {
+    font-size: 40px;
+}
+
+svg {
+    position: relative;
+    top: px;
+}

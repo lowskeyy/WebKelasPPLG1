@@ -21,26 +21,70 @@ li {
 }
 
 .picture {
-    display: flex;
     padding: 2rem;
 }
 
 .picture2 {
-    display: flex;
     padding-right: 2rem;
+}
+
+.ini1 {
+    position: relative;
+    left: -30px;
+}
+
+.ini2 {
+    position: relative;
+    bottom: 122px;
+    left: 135px;
+}
+
+.ini3 {
+    position: relative;
+    bottom: 92px;
+    left: 135px;
 }
 
 .ini4 {
     position: relative;
-    left: 31px;
+    bottom: 248px;
+    left: 2px;
 }
 
+.ini5 {
+    position: relative;
+    bottom: 220px;
+    left: 2px;
+}
+
+.ini6 {
+    position: relative;
+    bottom: 342px;
+    left: 168px;
+}
 /* overlay */
 .overlay {
     position: fixed;
+    width: 0;
+    height: 0;
+    overflow: hidden;
     top: 0;
     left: 0;
+    background: rgba(0, 0, 0, 0);
+    z-index: 9990;
+    transition: .5s;
+}
+
+.overlay:target {
+    width: auto;
+    height: auto;
     bottom: 0;
     right: 0;
+    background: rgba(0, 0, 0, 0.8);
 }
+
+.overlay img {
+
+}
+
 
